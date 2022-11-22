@@ -1,95 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Portfolio</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script language="javascript" type="text/javascript">
-function clearText(field) {
-    if (field.defaultValue == field.value) field.value = '';
-    else if (field.value == '') field.value = field.defaultValue;
-}
-</script>
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 <div id="container">
   <div id="header">
-    <div id="menu">
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Potfolio">Portfolio</a></li>
-        <li><a href="#Abouts">About</a></li>
-        <li><a href="#Contacts">Contact</a></li>
-      </ul>
+  <div id="home">
+    <ul>
+      <li><a href="#Home">Home</a></li>
+       <li><a href="#Potfolio">Portfolio</a></li>
+      <li><a href="#Abouts">About</a></li>
+      <li><a href="#Contacts">Contact</a></li>
+    </ul>
     </div>
     <div id="logo_area">
       <div id="logo">ALEX.M
       </div>
     </div>
-    <div class="welcome">
+    <div class="motto">
       <h1>CODING</h1>
       <h1>YOUR DREAMS</h1>
     </div>
   </div>
-  <!-- End Of header -->
-  <div id="content">
-    <div id="content_top">
-      <div id="content_bottom">
-        <div id="templaetmo_left">
-          <div class="one_col">
+  
+ <div id="content">
+   <div id="content_top">
+     <div id="content_bottom">
+       <div id="templaetmo_left">
+         <div class="one_col">
             <br><br>
-            <h1 a name="abouts" >ABOUT</h1>
+            <h1 id="Abouts">ABOUT</h1>
             <p style="font-size: 18px;">Hi! My name is Alex and i am full stack developer with a passion for creating cool design projects using the latest coding languages.<br> Highly skilled in :<br><br> HTML <br> CSS <br> JS</p>
             <div class="cleaner"></div>
           </div>
-          <div class="h_line"></div>
           <div class="one_col">
-            <h1> <a name="potfolio"></a> >PORTFOLIO</h1>
+            <h1 id="Potfolio"> PORTFOLIO</h1>
             <p>
               <ul>
                 <li>Kill switch. Links 2 devices that order either to switch itself off or close applications </li>
-                <br>
                 <li> UHealth. A 24/7 available online platform for doctors and patients </li> 
-                <br>
                 <li>MMusic. Music apk that allows everyone globaly to listen to people's play-list without subscriptions</li>
               </ul>
-
-            </p>
           </div>
-          <div class="h_line"></div>
-          <div class="section_1">
-          </div>
-          <div class="v_line"></div>
         </div>
-        <!-- End Of Left-->
+       
         <div id="right">
           <div id="right_top">
           </div>
           <div id="right_mid">
-            <div id="right_mid_top"> </a> <a href="#"><img src="https://i.pinimg.com/564x/87/8e/10/878e1023bf39a85b4dc39e2d0e568b13.jpg" alt="loading..." width="292" height="150" /></a> <a href="#"><img src="https://i.pinimg.com/564x/bf/2d/5a/bf2d5a9c9be2fe6671ebd33f861c2ed2.jpg" alt="loading..." width="293" height="150" /></a> <a href="#"><img src="https://i.pinimg.com/564x/dc/d5/a9/dcd5a92fe76f91fcbc58c3972ea12c93.jpg" alt="loading..." width="293" height="150" /></a> </div>
+           <div id="right_mid_top"><a href="#"><img src="https://i.pinimg.com/564x/87/8e/10/878e1023bf39a85b4dc39e2d0e568b13.jpg" alt="loading..." width="292" height="150"></a> <a href="#"><img src="https://i.pinimg.com/564x/bf/2d/5a/bf2d5a9c9be2fe6671ebd33f861c2ed2.jpg" alt="loading..." width="293" height="150"></a> <a href="#"><img src="https://i.pinimg.com/564x/dc/d5/a9/dcd5a92fe76f91fcbc58c3972ea12c93.jpg" alt="loading..." width="293" height="150"></a> </div>
           </div>
           <div id="right_bottom"> </div>
         </div>
-        <!-- End Of Right-->
         <div class="cleaner"></div>
-      </div>
-      <!-- End Of Content Bottom-->
-    </div>
-    <!-- End Of Content Top-->
   </div>
-  <!-- End Of Content-->
-  <div id="bottom_panel">
-    <div id="bottom_top">
+  
       <div class="bottom_3_col">
         <h1>Regards</h1>
         <p>Offices located behing luthli avn, CBD, <br>Nairobi Kenya </p>
         <p>Thank you for choosing us.</p>
       </div>
       <div class="bottom_3_col">
-        <h1> </a> >Contact</h1>
+        <h1 id="Contacts"> Contact</h1>
         <br>
-        <p> <a name="contacts"></a>Phone : +2543869798</p>
+        <p > Phone : +2543869798</p>
         <p > Email : amsamaha@gmail.com</p>
         <p>Address : Nairobi, Kenya</p>
       </div>
@@ -98,22 +78,19 @@ function clearText(field) {
         <form action="#" method="post">
           <label class="labels">Your Name:</label>
           <div class="cleaner"></div>
-          <input type="text" value="Type Your Name" name="fullname" class="field" onfocus="clearText(this)" onblur="clearText(this)" id="fullname" />
+          <input type="text" value="Type Your Name" name="fullname" class="field" onfocus="clearText(this)" onblur="clearText(this)" id="fullname">
           <div class="cleaner"></div>
           <label class="labels">Email:</label>
           <div class="cleaner"></div>
-          <input type="text" value="Type Your Email Adddress" name="email" class="field" onfocus="clearText(this)" onblur="clearText(this)" />
+          <input type="text" value="Type Your Email Adddress" name="email" class="field" onfocus="clearText(this)" onblur="clearText(this)">
           <div class="cleaner"></div>
           <label class="labels">Message:</label>
           <div class="cleaner"></div>
           <textarea name="message" cols="50" rows="3" class="text_area" onfocus="clearText(this)" onblur="clearText(this)">Type Your Message</textarea>
-          <input type="submit" name="search" value = "Send" alt="Search" class="button" />
+          <input type="submit" name="search" value = "Send" class="button">
         </form>
       </div>
-      <div class="cleaner"></div>
     </div>
-    <!-- End Of bottom_top-->
   </div>
-<!-- End Of Container -->
 </body>
 </html>
